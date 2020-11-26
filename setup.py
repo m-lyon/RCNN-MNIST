@@ -16,7 +16,7 @@ setup(
     description='Recurrent Convolutional Neural Network implementation on MNIST.',
     author='Matt Lyon',
     author_email='matthewlyon18@gmail.com',
-    long_description='test',
+    long_description=long_description,
     long_description_content_type='text/markdown',
     python_requires='>=3.7',
     license='MIT License',

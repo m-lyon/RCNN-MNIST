@@ -31,7 +31,7 @@ class RCNNModel:
                 raise RuntimeError('tensor must have shape (1, N, 28, 28, 1)')
         except AttributeError:
             raise AttributeError('Input tensor must be tensor/numpy array')
-        self.state = self.encoder.predict(tensor)
+        self.state = self.encoder(tensor)
 
     def decode(self, tensor):
         try:

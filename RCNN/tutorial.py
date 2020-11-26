@@ -3,9 +3,13 @@ import numpy as np
 
 from os import path
 
+def _load_digit_array():
+    arr = np.load(path.join(path.dirname(__file__), 'data', 'digits.npy'))
+    return arr / 255.0
+
 class Tutorial:
 
-    digit_arr = np.load(path.join(path.dirname(__file__), 'data', 'digits.npy'))
+    digit_arr = _load_digit_array()
     
     @classmethod
     def get_digit_set(cls, digit, num):
