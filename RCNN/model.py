@@ -2,7 +2,6 @@ import numpy as np
 import tensorflow as tf
 
 from os import path
-from PIL import Image
 from tensorflow import keras
 from tensorflow.keras.layers import TimeDistributed, Conv2D, MaxPooling2D, Dropout, Flatten, Dense, GRU, Conv2DTranspose, Concatenate, Reshape, UpSampling2D
 
