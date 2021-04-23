@@ -2,7 +2,10 @@
 This project contains an implementation of a Recurrent Convolutional Neural Network used on MNIST digits data.
 
 ## Overview
-This is a CNN & RNN based network is able to map handdrawn digits into an encoding tensor, which can be then decoded to a rotated digit. The network is built using TensorFlow and Keras.
+This is a CNN & RNN based network is able to map hand-drawn digits into an encoding tensor, which can be then decoded to a rotated digit. The network is built using TensorFlow and Keras.
+
+## Dependencies
+This project requires `tensorflow` to be installed.
 
 
 ## Motivation
@@ -22,7 +25,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from RCNN import RCNNModel, Tutorial
 
-# Get a specified amount of digits from a subset of the handdrawn digit dataset
+# Get a specified amount of digits from a subset of the hand-drawn digit dataset
 digits = Tutorial.get_digit_set(digit=4, num=5)
 
 # Display one of the digits using matplotlib

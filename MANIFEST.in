@@ -1,0 +1,2 @@
+include RCNN/data/digits.npy
+include RCNN/data/weights.h5
